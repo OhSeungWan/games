@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="referrer" content="no-referrer">
+    <title>クリアグリッド プライバシーポリシー</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --surface-base: #F5F6F8;
+        --ink-primary: #15181D;
+        --ink-secondary: #4F5764;
+        --accent: #1F7A6C;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --surface-base: #121417;
+          --ink-primary: #ECEFF3;
+          --ink-secondary: #A7AEB9;
+          --accent: #6FD3C1;
+        }
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--surface-base);
+        color: var(--ink-primary);
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+          "Hiragino Sans", "Apple SD Gothic Neo", "Noto Sans", sans-serif;
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 24px 16px 48px;
+        overflow-wrap: anywhere;
+      }
+      :lang(ko) {
+        word-break: keep-all;
+      }
+      h1 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 1.15rem;
+        line-height: 1.4;
+        margin: 32px 0 8px;
+      }
+      p, ul {
+        margin: 0 0 12px;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      li {
+        margin-bottom: 4px;
+      }
+      a {
+        color: var(--accent);
+      }
+      .meta, nav, footer {
+        color: var(--ink-secondary);
+        font-size: 0.9rem;
+      }
+      nav {
+        margin-bottom: 24px;
+      }
+      nav a {
+        margin-right: 12px;
+      }
+      footer {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="../en/privacy.html" lang="en" hreflang="en">English</a>
+        <a href="../ko/privacy.html" lang="ko" hreflang="ko">한국어</a>
+        <a href="../ja/privacy.html" lang="ja" hreflang="ja">日本語</a>
+      </nav>
+      <h1>クリアグリッド プライバシーポリシー</h1>
+      <p class="meta">施行日：2026-10-02</p>
+      <p>このポリシーは、モバイルパズルアプリ「クリアグリッド」（以下「本アプリ」）が iOS と Android で個人情報をどのように取り扱うかを説明します。</p>
+
+      <h2>概要</h2>
+      <ul>
+        <li>本アプリ自体は個人情報を収集・送信しません。サーバー、アカウント、分析・クラッシュレポートのツールはありません。</li>
+        <li>本アプリには広告があります。広告は Google Mobile Ads SDK が表示し、この SDK が下記のデータを処理します。</li>
+        <li>広告の削除の購入が端末で確認されると、それ以降は広告 SDK を起動しません。</li>
+      </ul>
+
+      <h2>本アプリが自ら行うこと</h2>
+      <ul>
+        <li>進行状況、記録、設定、ヒントの数、広告の間隔、購入状態はこの端末にのみ保存します。</li>
+        <li>このデータは iOS の iCloud・端末のバックアップと、Android のクラウドバックアップ・端末間の転送から除外されるため、バックアップによっても端末の外に出ません。</li>
+        <li>このポリシーや利用規約を開く前に、接続を確認するため ohseungwan.github.io の名前解決（DNS 参照）を行います。識別子や内容は送信しません。本アプリが自ら行うネットワーク通信はこれだけです。</li>
+        <li>このページと利用規約はブラウザで開きます。ページにはスクリプト、Cookie、トラッキングはありません。</li>
+      </ul>
+
+      <h2>広告と広告 SDK</h2>
+      <p>本アプリは、Google が提供する Google Mobile Ads SDK と Google User Messaging Platform（UMP）SDK を使用します。これらの SDK は次のデータを収集・送信します。</p>
+      <ul>
+        <li>端末の識別子：広告識別子（iOS の IDFA、Android の広告 ID）とアプリセット ID</li>
+        <li>IP アドレスと、それから推定したおおよその位置情報</li>
+        <li>広告データと製品の操作（アプリの起動、タップ、広告の表示など）</li>
+        <li>パフォーマンスデータ、クラッシュデータ、その他の診断データ</li>
+      </ul>
+      <p>Google はこのデータを、広告の表示と測定、同意した場合のパーソナライズ広告、分析、不正防止に使用します。UMP SDK は、同意フォームを表示する必要があるかを判断するために、おおよその位置情報、パフォーマンス、操作のデータを使用します。データは送信中に暗号化されます。</p>
+      <p>UMP SDK は同意の選択を、Google Mobile Ads SDK は設定と識別子を端末に保存します。これらはアプリを削除すると消去されます。設定 → データをリセットでは消去されません。</p>
+      <p>広告リクエストは子ども向けとして扱われず、広告コンテンツのレーティングは最大 G です。</p>
+      <p>Google によるデータの取り扱いについては、<a href="https://policies.google.com/privacy">Google プライバシーポリシー</a>と<a href="https://policies.google.com/technologies/partner-sites">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>をご覧ください。</p>
+
+      <h2>同意とトラッキング</h2>
+      <ul>
+        <li>法律で同意が必要な地域では、起動時に Google の同意フォームを表示します。</li>
+        <li>iOS では、同意フォームの後に App Tracking Transparency（ATT）の許可を求めます。トラッキングを許可しない場合、広告 SDK は広告識別子を使用できません。</li>
+      </ul>
+
+      <h2>同意の変更と撤回</h2>
+      <ul>
+        <li>アプリ内：設定 → 広告のプライバシー設定。この項目は必要な地域でのみ表示されます。</li>
+        <li>iOS：端末の設定アプリで「プライバシーとセキュリティ」→「トラッキング」を開き、本アプリのトラッキングの許可をオフにします。</li>
+        <li>Android：端末の設定アプリで広告の設定（端末により「プライバシー」または「Google」の下）を開き、広告 ID をリセットまたは削除します。</li>
+      </ul>
+
+      <h2>広告の削除を購入した場合</h2>
+      <p>広告の削除の購入が端末で確認されると、それ以降、本アプリは起動時に同意の手続きを省略し、広告 SDK を起動しません。それより前に送信されたデータ（再インストール後、購入を復元するまでを含む）は、上記の広告 SDK の項目に従います。</p>
+
+      <h2>支払い</h2>
+      <p>アプリ内課金は Apple（App Store）と Google（Google Play）が処理します。本アプリは支払い情報を受け取らず、広告の削除を所有しているかどうかだけを端末に保存します。</p>
+
+      <h2>評価とレビュー</h2>
+      <p>本アプリはストアの評価画面を表示することがあります。この画面は Apple と Google が表示・処理します。Android で入力した評価とレビューは Google Play にレビューとして投稿されます。本アプリは入力内容を受け取りません。</p>
+
+      <h2>データの削除</h2>
+      <p>本アプリが保存したデータを消すには、アプリの設定 → データをリセットを使うか、アプリを削除してください。Google が処理するデータは上記の Google のポリシーに従います。</p>
+
+      <h2>子ども</h2>
+      <p>本アプリは 13 歳未満の子どもを対象としていません。本アプリ自体は、子どもを含め誰の個人情報も収集しません。</p>
+
+      <h2>ポリシーの変更</h2>
+      <p>このポリシーを変更する場合は、新しい内容をこのページに掲載し、上記の施行日を更新します。</p>
+
+      <h2>お問い合わせ</h2>
+      <p>このポリシーに関するお問い合わせは <a href="https://github.com/ohseungwan/games/issues">GitHub Issues</a>（https://github.com/ohseungwan/games/issues）にお寄せください。Issues は公開されるため、個人情報は書かないでください。</p>
+
+      <footer>
+        <p><a href="terms.html">利用規約</a></p>
+      </footer>
+    </main>
+  </body>
+</html>

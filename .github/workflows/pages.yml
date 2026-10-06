@@ -1,0 +1,48 @@
+# Publishes the policy pages to GitHub Pages (Story 12.3, FR-43, FR-31).
+# Pages Source must be "GitHub Actions" (HUMAN_TODO H8). The site is assembled
+# only by tool/build_pages_site.sh (the repository's, ADR 0076), which copies
+# docs/games/<slug>/{en,ko,ja}/*.html and nothing else, so internal documents
+# (store/, verification/, user-site/) are never published. ci.yml checks the
+# same assembled site against each app's link constants.
+name: pages
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'docs/games/**'
+      - 'tool/build_pages_site.sh'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Assemble the site
+        run: bash tool/build_pages_site.sh _site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

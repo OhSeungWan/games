@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="referrer" content="no-referrer">
+    <title>클리어 그리드 개인정보처리방침</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --surface-base: #F5F6F8;
+        --ink-primary: #15181D;
+        --ink-secondary: #4F5764;
+        --accent: #1F7A6C;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --surface-base: #121417;
+          --ink-primary: #ECEFF3;
+          --ink-secondary: #A7AEB9;
+          --accent: #6FD3C1;
+        }
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--surface-base);
+        color: var(--ink-primary);
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+          "Hiragino Sans", "Apple SD Gothic Neo", "Noto Sans", sans-serif;
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 24px 16px 48px;
+        overflow-wrap: anywhere;
+      }
+      :lang(ko) {
+        word-break: keep-all;
+      }
+      h1 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 1.15rem;
+        line-height: 1.4;
+        margin: 32px 0 8px;
+      }
+      p, ul {
+        margin: 0 0 12px;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      li {
+        margin-bottom: 4px;
+      }
+      a {
+        color: var(--accent);
+      }
+      .meta, nav, footer {
+        color: var(--ink-secondary);
+        font-size: 0.9rem;
+      }
+      nav {
+        margin-bottom: 24px;
+      }
+      nav a {
+        margin-right: 12px;
+      }
+      footer {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="../en/privacy.html" lang="en" hreflang="en">English</a>
+        <a href="../ko/privacy.html" lang="ko" hreflang="ko">한국어</a>
+        <a href="../ja/privacy.html" lang="ja" hreflang="ja">日本語</a>
+      </nav>
+      <h1>클리어 그리드 개인정보처리방침</h1>
+      <p class="meta">시행일: 2026-10-02</p>
+      <p>이 방침은 모바일 퍼즐 앱 클리어 그리드(이하 "앱")가 iOS와 Android에서 개인정보를 어떻게 다루는지 설명합니다.</p>
+
+      <h2>요약</h2>
+      <ul>
+        <li>앱 자체는 개인정보를 수집하거나 전송하지 않습니다. 서버, 계정, 분석·충돌 보고 도구가 없습니다.</li>
+        <li>앱에는 광고가 있습니다. 광고는 Google Mobile Ads SDK가 표시하며, 이 SDK가 아래에 적은 데이터를 처리합니다.</li>
+        <li>광고 제거 구매가 기기에서 확인되면 그 뒤로는 광고 SDK를 시작하지 않습니다.</li>
+      </ul>
+
+      <h2>앱이 직접 하는 일</h2>
+      <ul>
+        <li>진행, 기록, 설정, 힌트 수, 광고 간격, 구매 상태는 기기에만 저장합니다.</li>
+        <li>이 데이터는 iOS의 iCloud·기기 백업과 Android의 클라우드 백업·기기 간 전송에서 제외되므로, 백업으로도 기기 밖으로 나가지 않습니다.</li>
+        <li>이 방침이나 이용약관을 열기 전에 연결을 확인하려고 ohseungwan.github.io의 이름 조회(DNS 조회)를 합니다. 식별자나 내용은 보내지 않습니다. 앱이 직접 하는 네트워크 요청은 이것뿐입니다.</li>
+        <li>이 페이지와 이용약관은 브라우저에서 열립니다. 페이지에는 스크립트, 쿠키, 추적이 없습니다.</li>
+      </ul>
+
+      <h2>광고와 광고 SDK</h2>
+      <p>앱은 Google이 제공하는 Google Mobile Ads SDK와 Google User Messaging Platform(UMP) SDK를 사용합니다. 이 SDK는 다음 데이터를 수집해 전송합니다.</p>
+      <ul>
+        <li>기기 식별자: 광고 식별자(iOS의 IDFA, Android 광고 ID)와 앱 세트 ID</li>
+        <li>IP 주소와 이를 바탕으로 추정한 대략적인 위치</li>
+        <li>광고 데이터와 제품 상호작용(앱 실행, 탭, 광고 조회 등)</li>
+        <li>성능 데이터, 충돌 데이터, 기타 진단 데이터</li>
+      </ul>
+      <p>Google은 이 데이터를 광고 표시와 측정, 동의한 경우의 맞춤 광고, 분석, 사기 방지에 사용합니다. UMP SDK는 동의 양식을 보여야 하는지 판단하는 데 대략적인 위치, 성능, 상호작용 데이터를 사용합니다. 데이터는 전송 중에 암호화됩니다.</p>
+      <p>UMP SDK는 동의 선택을, Google Mobile Ads SDK는 설정과 식별자를 기기에 저장합니다. 이 데이터는 앱을 삭제하면 지워지며, 설정 → 데이터 초기화로는 지워지지 않습니다.</p>
+      <p>광고 요청은 아동 대상으로 표시하지 않으며, 광고 콘텐츠 등급은 최대 G입니다.</p>
+      <p>Google의 데이터 처리는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>과 <a href="https://policies.google.com/technologies/partner-sites">Google 서비스를 사용하는 사이트 또는 앱의 정보를 Google이 사용하는 방법</a>을 참고하세요.</p>
+
+      <h2>동의와 추적</h2>
+      <ul>
+        <li>법에 따라 동의가 필요한 지역에서는 앱을 시작할 때 Google의 동의 양식을 보여 줍니다.</li>
+        <li>iOS에서는 동의 양식 다음에 앱 추적 투명성(App Tracking Transparency, ATT) 권한을 묻습니다. 추적을 허용하지 않으면 광고 SDK는 광고 식별자를 사용할 수 없습니다.</li>
+      </ul>
+
+      <h2>동의 변경과 철회</h2>
+      <ul>
+        <li>앱 안: 설정 → 광고 개인정보 설정. 이 항목은 필요한 지역에서만 보입니다.</li>
+        <li>iOS: 기기의 설정 앱에서 개인정보 보호 및 보안 → 추적으로 가서 이 앱의 추적 허용을 끕니다.</li>
+        <li>Android: 기기의 설정 앱에서 광고 설정(기기에 따라 개인정보 보호 또는 Google 아래)을 열어 광고 ID를 재설정하거나 삭제합니다.</li>
+      </ul>
+
+      <h2>광고 제거를 구매한 경우</h2>
+      <p>광고 제거 구매가 기기에서 확인되면 그 뒤로 앱은 실행할 때 동의 절차를 건너뛰고 광고 SDK를 시작하지 않습니다. 그 전에 보낸 데이터(다시 설치한 뒤 구매를 복원하기 전까지 포함)는 위의 광고 SDK 항목을 따릅니다.</p>
+
+      <h2>결제</h2>
+      <p>인앱 구매는 Apple(App Store)과 Google(Google Play)이 처리합니다. 앱은 결제 정보를 받지 않으며, 광고 제거를 소유했는지만 기기에 저장합니다.</p>
+
+      <h2>평가와 리뷰</h2>
+      <p>앱은 스토어의 평가 창을 보여 줄 수 있습니다. 이 창은 Apple과 Google이 표시하고 처리합니다. Android에서 입력한 별점과 리뷰는 Google Play에 리뷰로 게시됩니다. 앱은 입력한 내용을 받지 않습니다.</p>
+
+      <h2>데이터 삭제</h2>
+      <p>앱이 저장한 데이터를 지우려면 앱의 설정 → 데이터 초기화를 사용하거나 앱을 삭제하세요. Google이 처리하는 데이터는 위의 Google 정책을 따릅니다.</p>
+
+      <h2>아동</h2>
+      <p>앱은 13세 미만 아동을 대상으로 하지 않습니다. 앱 자체는 아동을 포함한 누구의 개인정보도 수집하지 않습니다.</p>
+
+      <h2>방침 변경</h2>
+      <p>이 방침이 바뀌면 새 내용을 이 페이지에 게시하고 위의 시행일을 바꿉니다.</p>
+
+      <h2>문의</h2>
+      <p>이 방침에 관한 문의는 <a href="https://github.com/ohseungwan/games/issues">GitHub 이슈</a>(https://github.com/ohseungwan/games/issues)에 남겨 주세요. 이슈는 공개되므로 개인정보를 적지 마세요.</p>
+
+      <footer>
+        <p><a href="terms.html">이용약관</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
